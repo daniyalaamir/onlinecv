@@ -1,0 +1,97 @@
+<div id="ajax-page" class="ajax-page-content">
+    <div class="ajax-page-wrapper">
+        <div class="ajax-page-nav">
+            <div class="nav-item ajax-page-prev-next">
+                <a class="ajax-page-load" href="portfolio-2.html"><i class="pe-7s-icon pe-7s-angle-left"></i></a>
+                <a class="ajax-page-load" href="portfolio-4.html"><i class="pe-7s-icon pe-7s-angle-right"></i></a>
+            </div>
+            <div class="nav-item ajax-page-close-button">
+                <a id="ajax-page-close-button" href="#"><i class="pe-7s-icon pe-7s-close"></i></a>
+            </div>
+        </div>
+
+        <div class="ajax-page-title">
+            <h1>Qualifly - Crowdsourced Testing Platform</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-7 col-md-7 portfolio-block">
+                <img src="images/portfolio/portfolio_full/Qualifly.png" alt="Qualifly">
+
+                <script type="text/javascript">
+                    function customAjaxScroll() {
+                        var windowWidth = $(window).width();
+                        if (windowWidth > 991) {
+                            // Custom Ajax Page Scroll
+                            $("#ajax-page").mCustomScrollbar({
+                                scrollInertia: 8,
+                                documentTouchScroll: false
+                            });
+                        } else {
+                            $("#ajax-page").mCustomScrollbar('destroy');
+                        }
+                    }
+
+                    jQuery(document).ready(function($){
+
+                        // Ajax Loaded Page Scroll
+                        customAjaxScroll();
+
+
+                        $('.portfolio-page-carousel').owlCarousel({
+                            smartSpeed:1200,
+                            items: 1,
+                            loop: true,
+                            dots: true,
+                            nav: true,
+                            navText: false,
+                            margin: 10
+                        });
+
+                    });
+
+                    jQuery(window).on('resize', function() {
+                        customAjaxScroll();
+                    });
+                </script>
+            </div>
+
+            <div class="col-sm-5 col-md-5 portfolio-block">
+                <!-- Project Description -->
+                <div class="block-title">
+                    <h3>Description</h3>
+                </div>
+                <ul class="project-general-info">
+                    <li><p><i class="fa fa-user"></i> Daniyal Aamir</p></li>
+                    <li><p><i class="fa fa-globe"></i> <a href="https://qualifly.us/" target="_blank">qualifly.us</a></p></li>
+                </ul>
+
+                <p class="text-justify">Qualifly is an on-demand testing automation service that is fast, easy, and reliable and is supported by a curated crowd of testers. It lowers the costs of testing for IT organizations (OPEX and CAPEX ) while delivering consistent, high-quality testing results. The platform offers Flexible models, easy and seamless engagement, faster testing cycles, and significantly reduces OPEX and CAPEX for the IT organizations.</p>
+
+                <ul>
+                    <li><p>Developed the front-end web page by using HTML5, CSS3, Bootstrap and JavaScript, taking advantage of the framework React.js.</p></li>
+                    <li><p>Utilized MongoDB to perform various CRUD operations. Used mongoose for integration of MongoDB in the project.</p></li>
+                    <li><p>Worked on Unit test by Test-Driven Development (TDD), writing test cases using Jest tests.</p></li>
+                </ul>
+                <!-- /Project Description -->
+
+                <!-- Technologies -->
+                <div class="tags-block">
+                    <div class="block-title">
+                        <h3>Technologies</h3>
+                    </div>
+                    <ul class="tags">
+                        <li><a>HTML5</a></li>
+                        <li><a>CSS3</a></li>
+                        <li><a>JavaScript</a></li>
+                        <li><a>Bootstrap</a></li>
+                        <li><a>React.js</a></li>
+                        <li><a>MongoDB</a></li>
+                        <li><a>AWS Cognito</a></li>
+                    </ul>
+                </div>
+                <!-- /Technologies -->
+            </div>
+        </div>
+    </div>
+</div>
