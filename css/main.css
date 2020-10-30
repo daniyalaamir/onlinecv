@@ -2010,7 +2010,11 @@ ul.social-links li:last-child a {
   }
 
   #hidden-skill {
-    visibility: hidden;
+    display: none;
+  }
+
+  .left-skill-container {
+    margin-bottom: 0;
   }
 
   .timeline {
