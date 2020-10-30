@@ -1981,6 +1981,11 @@ ul.social-links li:last-child a {
     padding-left: 20px;
     padding-right: 20px; 
   }
+
+  #hidden-exp,
+  #hidden-skill {
+    visibility: hidden;
+  }
 }
 
 @media only screen and (max-width: 769px) {
@@ -1998,6 +2003,18 @@ ul.social-links li:last-child a {
 
   .info-list {
     margin-top: 20px;
+  }
+
+  #hidden-exp {
+    display: none;
+  }
+
+  #hidden-skill {
+    visibility: hidden;
+  }
+
+  .timeline {
+    padding-bottom: 0px;
   }
 }
 
@@ -2279,6 +2296,7 @@ ul.social-links li:last-child a {
 }
 /*===== /v2.0.0 - 23 November 2018 =====*/
 
-#hidden {
+#hidden-exp,
+#hidden-skill {
   visibility: hidden;
 }
